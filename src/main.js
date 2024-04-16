@@ -40,7 +40,7 @@ const main = async () => {
 
     growth.userName = juejin.user.user_name
   } catch {
-    throw new Error('登录失败, 请尝试更新 Cookies:' + COOKIE)
+    throw new Error('登录失败, 请尝试更新 Cookies')
   }
 
   // 签到
