@@ -32,9 +32,7 @@ ${growth.freeDrawed ? `恭喜抽中 ${growth.lotteryName}` : '今日已免费抽
 }
 
 const main = async () => {
-  const juejin = new Juejin()
-
-  console.log("cookie:",  COOKIE);
+  const juejin = new Juejin();
 
   // 登录
   try {
@@ -42,7 +40,7 @@ const main = async () => {
 
     growth.userName = juejin.user.user_name
   } catch {
-    throw new Error('登录失败, 请尝试更新 Cookies')
+    throw new Error('登录失败, 请尝试更新 Cookies:' + COOKIE)
   }
 
   // 签到
