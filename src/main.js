@@ -4,18 +4,41 @@ const { wait, getRandomArbitrary } = require('./utils/utils.js')
 const { COOKIE } = require('./ENV.js')
 
 const growth = {
-  userName: '', // 用户名
-  checkedIn: false, // 是否签到
-  incrPoint: 0, // 签到获得矿石数
-  sumPoint: 0, // 总矿石数
-  contCount: 0, // 连续签到天数
-  sumCount: 0, // 累计签到天数
-  luckyValue: 0, // 总幸运值
-  freeCount: 0, // 免费抽奖次数
-  freeDrawed: false, // 是否免费抽奖
-  lotteryName: '', // 奖品名称
-  collectedBug: false, // 是否收集 Bug
-  collectBugCount: 0, // 收集 Bug 的数量
+  // 用户名
+  userName: '',
+
+  // 是否签到
+  checkedIn: false,
+
+  // 签到获得矿石数
+  incrPoint: 0,
+
+  // 总矿石数
+  sumPoint: 0,
+
+  // 连续签到天数
+  contCount: 0,
+
+  // 累计签到天数
+  sumCount: 0,
+
+  // 总幸运值
+  luckyValue: 0,
+
+  // 免费抽奖次数
+  freeCount: 0,
+
+  // 是否免费抽奖
+  freeDrawed: false,
+
+  // 奖品名称
+  lotteryName: '',
+
+  // 是否收集 Bug
+  collectedBug: false,
+
+  // 收集 Bug 的数量
+  collectBugCount: 0,
 }
 
 const message = () => {
